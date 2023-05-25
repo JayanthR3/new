@@ -21,11 +21,11 @@ public class LibraryController {
 	@Autowired
 	private LibraryService booksService;
 	
-  @PostMapping("/books")
-  public int save(@RequestBody Library books) {
-	  booksService.save(books);
-	  return books.getId();
-  }
+//   @PostMapping("/books")
+//   public int save(@RequestBody Library books) {
+// 	  booksService.save(books);
+// 	  return books.getId();
+//   }
 
   @GetMapping("/books/{bookid}")
    public Library getBooksById(@PathVariable("bookid") int booksid) {
@@ -48,3 +48,4 @@ public class LibraryController {
 //	return books;
 //  }
 }
+testing merge
